@@ -228,6 +228,12 @@ h1,h2,h3,h4, ul {
     line-height: 40px;
 }
 
+.display-6 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
 .pt-9 {
     padding-top: 2.25rem;
 }
@@ -588,12 +594,17 @@ h1,h2,h3,h4, ul {
        HOMEPAGE
 /* --------------- */
 
+.homepage .hero-section {
+    height: 100vh;
+}
+
 .homepage .hero {
     padding-top: 100px;
 }
 
 .homepage .hero h1 {
     font-size: 36px;
+    font-weight: 600;
 }
 
 .process-list_item {
