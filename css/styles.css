@@ -210,6 +210,10 @@ h1,h2,h3,h4, ul {
     margin-left: 16.6666666667%;
 }
 
+.col-offset-6 {
+    margin-left: 20%;
+}
+
 .w-100 {
     width: 100%;
 }
@@ -594,6 +598,19 @@ h1,h2,h3,h4, ul {
 
 .process-list_item {
     border-bottom: 1px solid #000;
+}
+
+.service-list_title {
+    
+}
+
+.homepage .service-number {
+    position: absolute;
+    right: 100%;
+    margin-right: px;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 99999px;
 }
 
 
