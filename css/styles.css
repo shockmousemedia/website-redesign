@@ -154,6 +154,14 @@ h1,h2,h3,h4, ul {
     grid-template-columns: repeat(12,1fr);
 }
 
+.d-inline {
+    display: inline-block;
+}
+
+.f-right {
+    float: right;
+}
+
 .flex {
     display: flex;
 }
@@ -226,6 +234,10 @@ h1,h2,h3,h4, ul {
 
 .pt-14 {
     padding-top: 3.5rem;
+}
+
+.pb-3 {
+    padding-bottom: .50rem;
 }
 
 .pb-14 {
