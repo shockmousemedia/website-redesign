@@ -14,6 +14,10 @@ ul {
     padding: 0;
 }
 
+dd {
+    margin: 0;
+}
+
 input {
     border-style: solid;
     border-radius: 0;
@@ -72,6 +76,10 @@ h1,h2,h3,h4, ul {
     padding-right: 15px;
 }
 
+.d-none {
+    display: none;
+}
+
 .w100 {
     width: 100%;
 }
@@ -92,8 +100,14 @@ h1,h2,h3,h4, ul {
     text-decoration: none;
 }
 
+.light-bg {
+    background-color: #fff;
+    color: #000;
+}
+
 .dark-bg {
     background-color: #242424;
+    color: #fff;
 }
 
 .white {
@@ -554,6 +568,21 @@ h1,h2,h3,h4, ul {
     filter: brightness(-1) invert(1);
 }
 
+/* --------------- /
+       HOMEPAGE
+/* --------------- */
+
+.homepage .hero {
+    padding-top: 100px;
+}
+
+.homepage .hero h1 {
+    font-size: 36px;
+}
+
+.process-list_item {
+    border-bottom: 1px solid #000;
+}
 
 
 /* --------------- /
