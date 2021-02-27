@@ -15,3 +15,19 @@ $('.menu-btn').on('click', function (e) {
     $(".navigation ul li").toggleClass("active");
     $("body").toggleClass("overflow-hidden");
 });
+
+$('.toggle-btn-1').on('click', function (a) {
+    $(".process-list .toggle-1").toggleClass("d-none");
+});
+
+$('.toggle-btn-2').on('click', function (a) {
+    $(".process-list .toggle-2").toggleClass("d-none");
+});
+
+$('.toggle-btn-3').on('click', function (a) {
+    $(".process-list .toggle-3").toggleClass("d-none");
+});
+
+$('.toggle-btn-4').on('click', function (a) {
+    $(".process-list .toggle-4").toggleClass("d-none");
+});
