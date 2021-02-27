@@ -467,7 +467,7 @@ h1,h2,h3,h4, ul {
     list-style-type: none;
     text-align: center;
     padding-left: 0;
-    padding: 20rem 0;
+    padding: 10rem 0;
 }
 
 .navigation .inner ul li {
@@ -485,10 +485,11 @@ h1,h2,h3,h4, ul {
 }
 
 .navigation .inner ul li a {
-    font-size: 28px;
+    font-size: 24px;
     color: #000;
-    font-weight: 600;
+    font-weight: 500;
     position: relative;
+    text-decoration: none;
 }
 
 .navigation .inner ul li a span {
