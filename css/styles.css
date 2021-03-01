@@ -928,3 +928,18 @@ footer {
     width: 100%;
     height: auto;
 }
+
+@media only screen and (min-width: 600px) {
+    .homepage .hero h1 {
+        font-size: 82px;
+        line-height: 82px;
+    }
+
+    .hero-img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+}
