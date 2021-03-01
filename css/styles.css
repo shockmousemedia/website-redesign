@@ -939,6 +939,11 @@ footer {
     .hero-img {
         display: none;
     }
+
+    .about .hero-text h1 {
+        font-size: 82px;
+        line-height: 82px;
+    }
 }
 
 @media only screen and (min-width: 769px) {
@@ -1040,9 +1045,18 @@ footer {
         line-height: 77px;
     }
 
+    .display-4 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
     .micro-1 {
         font-size: 18px;
         line-height: 20px;
+    }
+
+    .col-17 {
+        width: 70.833333333333%;
     }
 
     .lpb-18 {
