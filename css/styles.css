@@ -842,11 +842,11 @@ ul {
 
 .c-homepage-project__small-image {
     width: 57.1428571429%;
-    transform: translate(calc(-50% - 16px),30%);
+    transform: translate(calc(-50% - 16px), 30%);
 }
 
 [data-align=right] .c-homepage-project__small-image {
-    transform: translate(calc(50% + 8px),30%);
+    transform: translate(calc(50% + 8px), 30%);
 }
 
 .r--2x3 {
@@ -856,6 +856,7 @@ ul {
 .c-homepage-project__categories {
     transform: translateY(calc(100% + 12px));
 }
+
 /* CASE STUDY */
 
 
@@ -1091,6 +1092,7 @@ footer {
     .c-hero_home {
         width: 75vw;
     }
+
     .homepage .hero h1 {
         font-size: 82px;
         line-height: 82px;
@@ -1195,6 +1197,47 @@ footer {
 }
 
 @media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 1520px;
+    }
+    p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .l\:w60 {
+        width: 60%;
+    }
+
+    .l\:mt-10 {
+        margin-top: 2.5rem;
+    }
+
+    .l\:pb-45,
+    .l\:py-45 {
+        padding-bottom: 11.25rem;
+    }
+
+    .pt-45 {
+        padding-top: 11.25rem;
+    }
+
+    .l\:pt-20 {
+        padding-top: 5rem;
+    }
+
+    .c-bottom-form h2,
+    .display-3,
+    h3 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .display-4 {
+        font-size: 65px;
+        line-height: 75px;
+    }
+
     .mobile-title {
         display: none;
     }
@@ -1217,11 +1260,6 @@ footer {
         line-height: 77px;
     }
 
-    .display-4 {
-        font-size: 45px;
-        line-height: 50px;
-    }
-
     .micro-1 {
         font-size: 18px;
         line-height: 20px;
@@ -1235,9 +1273,27 @@ footer {
         padding-bottom: 4.5rem;
     }
 
-     /* --------------- /
+    /* --------------- /
        HOMEPAGE
     /* --------------- */
+
+    .hero {
+        width: 100%;
+    }
+
+    .homepage .hero-text {
+        max-width: 1024px;
+    }
+
+    .homepage .hero h1 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .hero .c-hero_home {
+        max-width: 800px;
+        left: 75%;
+    }
 
     .services-container {
         width: 100%;
@@ -1274,6 +1330,42 @@ footer {
     .homepage .small-header {
         transform: translateY(20%);
     }
+
+    .homepage .large-title {
+        display: block;
+    }
+
+    /* Case Study */
+    [data-vertical-align=start] .c-homepage-project__content {
+        align-self: start;
+    }
+
+    .c-homepage-project__content {
+        grid-column: 1/span 14;
+    }
+
+    .c-homepage-project__copy {
+        left: 10%;
+    }
+
+    .c-homepage-project__images {
+        grid-column: 18/span 7;
+        grid-row: 1;
+    }
+
+    [data-vertical-align=center] .c-homepage-project__content {
+        align-self: center;
+    }
+
+    [data-align=right] .c-homepage-project__content {
+        grid-column: 11/span 14;
+    }
+
+    [data-align=right] .c-homepage-project__images {
+        grid-column: 1/span 7;
+    }
+
+    /* Case Study */
 
     /* --------------- /
        ABOUT
