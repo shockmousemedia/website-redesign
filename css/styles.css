@@ -1239,12 +1239,17 @@ footer {
     }
 
     .display-4 {
-        font-size: 65px;
-        line-height: 75px;
+        font-size: 45px;
+        line-height: 50px;
     }
 
     .mobile-title {
         display: none;
+    }
+
+    .micro-2 {
+        font-size: 14px;
+        line-height: 16px;
     }
 
     .ml-5 {
@@ -1345,7 +1350,7 @@ footer {
         transform: translateY(20%);
     }
 
-    .homepage .large-title {
+    .large-title {
         display: block;
     }
 
@@ -1386,7 +1391,25 @@ footer {
     /* --------------- */
 
     .about-main {
-        background-color: #04afa6;
+        display: none;
+    }
+
+    .about-main_header {
+        flex-basis: 15%;
+    }
+
+    .about-main_text {
+        flex-basis: 80%;
+    }
+
+    .about-main_text p{
+        font-size: 42px;
+        line-height: 42px;
+        font-weight: 600;
+    }
+
+    .about .hero-text {
+        max-width: 1024px;
     }
 
     .about .contact-bar_header {
