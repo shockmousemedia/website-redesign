@@ -12,6 +12,10 @@ html {
     overflow-x: hidden;
 }
 
+.font-merriweather {
+    font-family: 'Merriweather', serif;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -92,6 +96,21 @@ ul {
     padding-right: 15px;
 }
 
+.oh {
+    overflow: hidden;
+}
+
+.right {
+    right: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
 
 .c-image {
     width: 100%;
@@ -101,6 +120,10 @@ ul {
 
 .o-cover {
     object-fit: cover;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .text-center {
@@ -113,6 +136,10 @@ ul {
 
 .block {
     display: block;
+}
+
+.w70 {
+    width: 70%;
 }
 
 .w100 {
@@ -281,11 +308,6 @@ ul {
     line-height: 55px;
 }
 
-.display-3 {
-    font-size: 42px;
-    line-height: 42px;
-}
-
 .display-4 {
     font-size: 35px;
     line-height: 40px;
@@ -348,6 +370,10 @@ ul {
 
 .mb-6 {
     margin-bottom: 1.5rem;
+}
+
+.mb-7 {
+    margin-bottom: 1.75rem;
 }
 
 .mb-10 {
@@ -749,6 +775,47 @@ ul {
     border-radius: 99999px;
 }
 
+.homepage .contact-bar_header {
+    grid-column: 2/-1;
+    grid-row: 2;
+    justify-self: start;
+    color: #000 !important;
+}
+
+.homepage .contact-bar_arrow {
+    font-size: 24px;
+    grid-column: 9/-1;
+    height: 60px;
+    justify-self: end;
+    width: 60px;
+    color: #121212;
+}
+
+.homepage .small-header {
+    grid-column: 2/-1;
+    grid-row: 1;
+}
+
+.homepage u {
+    color: #000;
+}
+
+.homepage .underline-text {
+    text-decoration: none;
+    z-index: 0;
+    position: relative;
+}
+
+.homepage .underline-text_line {
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 100%;
+    height: 2px;
+    background-color: #04afa6;
+    z-index: -1;
+}
+
 /* CASE STUDY */
 .c-homepage-projects {
     color: #000;
@@ -767,6 +834,28 @@ ul {
     align-self: start;
     grid-column: 5/span 8;
     grid-row: 2;
+}
+
+[data-align=right] .c-homepage-project__images {
+    grid-column: 2/span 8;
+}
+
+.c-homepage-project__small-image {
+    width: 57.1428571429%;
+    transform: translate(calc(-50% - 16px),30%);
+}
+
+[data-align=right] .c-homepage-project__small-image {
+    transform: translate(calc(50% + 8px),30%);
+}
+
+.r--2x3 {
+    padding-top: 150%;
+}
+
+.c-homepage-project__categories {
+    transform: translateY(calc(100% + 12px));
+}
 /* CASE STUDY */
 
 
