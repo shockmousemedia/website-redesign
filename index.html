@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.svg" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -20,7 +25,7 @@
 <body class="homepage dark-bg">
     <div id="navigation"></div>
 
-    <section class="hero-section relative flex flex-col">
+    <section>
         <header class="header">
             <div class="container-fluid p-0"><a href="index.html" class="transition"><img src="images/logo-white.png"
                         alt="Image" class="logo"></a>
@@ -33,6 +38,9 @@
                 <!-- end menu-btn -->
             </div>
         </header>
+    </section>
+
+    <section class="hero-section relative flex flex-col">
         <div class="hero container col-offset-2 col-20 | col-offset-1">
             <div class="hero-text relative">
                 <h1>A digital media agency built to connect innovative brands with the world.</h1>
@@ -46,11 +54,11 @@
     </section>
 
     <section>
-        <div class="services-container container col-20  mb-10 flex flex-col | col-offset-1">
-            <div class="services-header">
-                <h3 class="small-title">What We Do</h3>
+        <div class="services-container container col-20  mb-10 flex flex-col | flex-row">
+            <div class="services-header | col-5">
+                <h3 class="small-title">What We Do<span>→</span></h3>
             </div>
-            <dl class="flex flex-col">
+            <dl class="flex flex-col | flex-row flex-wrap">
                 <div class="service-list_item mobile-list_item mb-10">
                     <dt class="service-list_title relative display-6">
                         <!--<span class="service-number">01</span>-->
@@ -94,10 +102,97 @@
         </div>
     </section>
 
-    <section>
-        <div class="case-study_container">
-
-        </div>
+    <section class="c-homepage-projects | relative z-i-0" style="background-color: rgb(200, 142, 142);">
+        <article class="c-homepage-project | pt-10 pb-25 s:pb-30 m:pb-40 l:pt-20 l:pb-45" data-align="left"
+            data-vertical-align="start" data-onscroll="switch-bg" data-bg="#c88e8e">
+            <div class="container relative z-i-2 text-center text-2 font-paragraph uppercase mb-7 l:mb-20"
+                data-onscroll="fade-in-full" style="opacity: 1;">
+                How we operate </div>
+            <div class="container grid-24">
+                <div class="c-homepage-project__content | mb-10 l:mb-0 relative z-i-2" data-onscroll="parallax -0.7"
+                    style="transform: translate(0%, 3.6447%) translate3d(0px, 0px, 0px);">
+                    <header class="c-homepage-project__header | mb-6" data-onscroll="fade-in-full" style="opacity: 1;">
+                        <h1 class="display-3 font-display">
+                            <span class="text-2 font-highlight" aria-hidden="true">01</span>
+                            It starts with a single-minded strategy: find new consumers. </h1>
+                    </header>
+                    <p class="c-homepage-project__copy | relative w100 l:w60" data-onscroll="fade-in-full"
+                        style="opacity: 1;">
+                        <span class="text-4 block mb-2">
+                            Like how we launched Beefeater Pink, to find the brand the next generation of gin
+                            consumers.<br>
+                            <br>
+                            And made one of Pernod Ricard's most successful NPD's ever. </span>
+                        <a href="https://www.weareimpero.com/work/london-underground/"
+                            class="micro-1 text-decoration-none"
+                            title="See project: The world’s first scented campaign on the London Underground"
+                            data-hover="underline">
+                            Launch project&nbsp;<i class="inline">→</i>
+                        </a>
+                    </p>
+                </div>
+                <div class="c-homepage-project__images | relative l:mt-10" data-onscroll="fade-in-full"
+                    style="opacity: 1;">
+                    <figure class="c-image oh  is-portrait r--2x3" style="padding-bottom: 0%;">
+                        <img class="o-cover ro z-i-0 is-visible" alt="beefeater-home-big"
+                            src="images/style-lend-main.jpeg">
+                    </figure>
+                    <div class="c-homepage-project__small-image | absolute z-i-1 bottom left" data-onscroll="parallax 2"
+                        style="transform: translate(0%, 1.2973%) translate3d(-92px, 68.1px, 0px);">
+                        <figure class="c-image oh  is-portrait r--2x3" style="padding-bottom: 0%;">
+                            <img class="o-cover ro z-i-0 is-visible" alt="beefeater-home-small"
+                                src="images/style-lend-small.jpeg">
+                        </figure>
+                    </div>
+                    <div class="c-homepage-project__categories | micro-2 absolute bottom z-i-2 w70
+text-right right          ">
+                        Brand Strategy<span class="inline-block">/</span>Brand world design<span
+                            class="inline-block">/</span>Digital Strategy and Campaign<span
+                            class="inline-block">/</span>Out of Home </div>
+                </div>
+            </div>
+        </article>
+        <article class="c-homepage-project | pt-10 pb-25 s:pb-30 m:pb-40 l:pt-20 l:pb-45" data-align="right"
+            data-vertical-align="center" data-onscroll="switch-bg" data-bg="#71853d">
+            <div class="container grid-24">
+                <div class="c-homepage-project__content | mb-10 l:mb-0 relative z-i-2" data-onscroll="parallax -0.7"
+                    style="">
+                    <header class="c-homepage-project__header | mb-6" data-onscroll="fade-in-full" style="opacity: 1;">
+                        <h1 class="display-3 font-display">
+                            <span class="text-2 font-highlight" aria-hidden="true">02</span>
+                            We create <strike>big</strike> long ideas </h1>
+                    </header>
+                    <p class="c-homepage-project__copy | relative w100 l:w60" data-onscroll="fade-in-full"
+                        style="opacity: 1;">
+                        <span class="text-4 block mb-2">
+                            Like how we rallied Nature Valley consumers around a long-term mission to inspire
+                            people to "get out more". </span>
+                        <a href="https://www.weareimpero.com/work/nature-valley/" class="micro-1 text-decoration-none"
+                            title="See project: Getting people out more with Nature Valley" data-hover="underline">
+                            Launch project&nbsp;<i class="inline">→</i>
+                        </a>
+                    </p>
+                </div>
+                <div class="c-homepage-project__images | relative " data-onscroll="fade-in-full" style="opacity: 1;">
+                    <figure class="c-image oh  is-portrait r--2x3" style="padding-bottom: 0%;">
+                        <img class="o-cover ro z-i-0 is-visible" alt="lake run 2-min"
+                            src="blob:https://www.weareimpero.com/7dc6838f-f000-4743-9b27-203ae86225c7">
+                    </figure>
+                    <div class="c-homepage-project__small-image | absolute z-i-1 bottom right"
+                        data-onscroll="parallax 2" style="">
+                        <figure class="c-image oh  is-portrait r--2x3" style="padding-bottom: 0%;">
+                            <img class="o-cover ro z-i-0 is-visible" alt="nature-valley-home-small"
+                                src="blob:https://www.weareimpero.com/af275af0-3b2c-4a87-b9b3-1d174f4ed58a">
+                        </figure>
+                    </div>
+                    <div class="c-homepage-project__categories | micro-2 absolute bottom z-i-2 w70
+text-left left          ">
+                        Brand Strategy<span class="inline-block">/</span>Creative Campaign<span
+                            class="inline-block">/</span>TVC<span class="inline-block">/</span>Out of Home
+                    </div>
+                </div>
+            </div>
+        </article>
     </section>
 
     <section class="light-bg">
@@ -116,7 +211,8 @@
                             <i class="fas fa-plus d-inline f-right"></i>
                         </div>
 
-                        <p class="d-none toggle-1">We start with your business in mind. By working to understand your goals,
+                        <p class="d-none toggle-1">We start with your business in mind. By working to understand your
+                            goals,
                             branding requirements, and expectations, we seek to build polished finished
                             products that accelerate your brand.</p>
 
@@ -126,7 +222,8 @@
                             <h4 class="pb-3 d-inline">Planning</h4>
                             <i class="fas fa-plus d-inline f-right"></i>
                         </div>
-                        <p class="d-none toggle-2">Once we have a thorough understanding of your vision, our designers and
+                        <p class="d-none toggle-2">Once we have a thorough understanding of your vision, our designers
+                            and
                             developers begin the planning process. During this stage, we use our technical
                             expertise to determine exactly how we will achieve your desired outcome.</p>
                     </div>
@@ -135,7 +232,8 @@
                             <h4 class="pb-3 d-inline">Implementation</h4>
                             <i class="fas fa-plus d-inline f-right"></i>
                         </div>
-                        <p class="d-none toggle-3">After developing a clear blueprint, we take action. While our developers build
+                        <p class="d-none toggle-3">After developing a clear blueprint, we take action. While our
+                            developers build
                             solid and secure fundamentals for your project, our design team brings your
                             brand to life. Every step of the way, we keep you in the loop.</p>
                     </div>
@@ -144,7 +242,8 @@
                             <h4 class="pb-3 d-inline">Feedback</h4>
                             <i class="fas fa-plus d-inline f-right"></i>
                         </div>
-                        <p class="d-none toggle-4">Once we’ve completed the project, we work with you for fine-tuning and
+                        <p class="d-none toggle-4">Once we’ve completed the project, we work with you for fine-tuning
+                            and
                             feedback. We want to ensure that your website, app, or eCommerce store
                             meets and exceeds your expectations.</p>
                     </div>
@@ -153,9 +252,91 @@
         </div>
     </section>
 
+    <section class="pt-12 relative work-carousel | py-24">
+        <div class="work-carousel_header col-20 col-offset-2 mb-6 | block swiper-slide">
+            <div class="container">
+                <h3 class="small-title uppercase mobile-title">Currently We Are</h3>
+            </div>
+        </div>
+        <div class="work-carousel_wrapper" data-cursor="drag">
+            <div class="container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="work-carousel_item swiper-slide | large-title">
+                            <h3 class="small-title uppercase">
+                                Currently We Are
+                                <span>→</span>
+                            </h3>
+                        </div>
+                        <div class="work-carousel_item swiper-slide | px-4">
+                            <figure class="c-image mb-4">
+                                <img class="o-cover ro" src="images/shockmke.jpeg" alt="">
+                            </figure>
+                            <h3 class="relative work-carousel_item-title text-2">
+                                <span class="micro-2 work-number">01</span>
+                                Empowering a diverse community of entrepreneurs
+                            </h3>
+                        </div>
+                        <div class="work-carousel_item swiper-slide | px-4">
+                            <figure class="c-image mb-4">
+                                <img class="o-cover ro" src="images/goprocookingshow.jpeg" alt="">
+                            </figure>
+                            <h3 class="relative work-carousel_item-title text-2">
+                                <span class="micro-2 work-number">02</span>
+                                Developing a cooking show
+                            </h3>
+                        </div>
+                        <div class="work-carousel_item swiper-slide | px-4">
+                            <figure class="c-image mb-4">
+                                <img class="o-cover ro" src="images/nashboutique.jpg" alt="">
+                            </figure>
+                            <h3 class="relative work-carousel_item-title text-2">
+                                <span class="micro-2 work-number">03</span>
+                                Reimagining the modern boutique
+                            </h3>
+                        </div>
+                        <div class="work-carousel_item swiper-slide | px-4">
+                            <figure class="c-image mb-4">
+                                <img class="o-cover ro" src="images/donutsndragons.jpeg" alt="">
+                            </figure>
+                            <h3 class="relative work-carousel_item-title text-2">
+                                <span class="micro-2 work-number">04</span>
+                                Helping Doughnuts & Dragons reach their target audience
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-9 pb-18 | py-32">
+        <div class="contact-bar_container container grid-24 relative">
+            <header class="contact-bar_header mb-10 d-inline | mb-0">
+                <a href="/contact.html" class="text-decoration-none">
+                    <h2 class="display-2">
+                        <u class="underline-text white">
+                            Contact Us
+                            <i class="underline-text_line"></i>
+                        </u>
+                    </h2>
+                </a>
+            </header>
+            <a href="contact.html" class="contact-bar_arrow inline-flex text-decoration-none">
+                <span class="w100 border-radius_full bg-blue flex justify-center align-items-center">
+                    <div>
+                        <span>→</span>
+                    </div>
+                </span>
+            </a>
+            <h3 class="small-title uppercase micro-1 small-header mb-10 | mb-0">Heard Enough?</h3>
+        </div>
+    </section>
+
     <div id="footer"></div>
 
     <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script type="text/javascript" src="scripts/swiperfile.js"></script>
 </body>
 
 </html>
